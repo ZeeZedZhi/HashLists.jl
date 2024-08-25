@@ -86,8 +86,22 @@ function Base.iterate(hashlist::HashList, state)
 end
 
 
+function Base.getindex(hashlist::HashList, i::Int)
+	entry = hashlist.head
+	for i in 2:i
+		entry = hashlist.list[entry]
+	end
+	return entry
+end
+
+
 function Base.length(hashlist::HashList)
 	return length(hashlist.list)
+end
+
+
+function Base.size(hashlist::HashList)
+	return (length(hashlist),)
 end
 
 
