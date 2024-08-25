@@ -2,7 +2,7 @@ module HashLists
 
 export HashList
 
-mutable struct HashList{T} <: AbstractSet{T}
+mutable struct HashList{T} <: AbstractArray{T}
 	head::Union{Nothing, T}
 	tail::Union{Nothing, T}
 	list::Dict{T, T}
