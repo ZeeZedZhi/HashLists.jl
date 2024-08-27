@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/ZeeZedZhi/HashLists.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/ZeeZedZhi/HashLists.jl/actions/workflows/CI.yml?query=branch%3Amain)
 
-```HashList``` a linked with O(1) lookup time—or at least as fast as ```haskey``` for ```Dict```.
+```HashList``` is a linked list with O(1) lookup time—or at least as fast as ```haskey``` for ```Dict```.
 
 Usage:
 ```
